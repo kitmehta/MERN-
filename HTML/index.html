@@ -18,7 +18,37 @@
             text-align:center;
         }
         .section{
+            padding: 50px;
             border: 3px solid black;
+            margin: 30px;
+            display: block;          
+            position: relative;;
+        }
+        .navbar{
+            border: 3px solid gray;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 0px;
+            position: sticky;
+            top: 0px;
+        }
+        .chat-box{
+            border: 1px solid lightslategray;
+            background-color: black;
+            text-align: center;
+            color: blue;
+            position: fixed;
+            bottom: 0px;
+            width: 200px;
+            right: 0px;
+            padding: 
+        }
+        .courseMessage
+        {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
         }
     </style>
 
@@ -53,7 +83,7 @@
             <li>Developer</li>
             <li>Software Engineer</li>
             <li>Problem Solver</li>
-        </ol>
+        </ol>-->
     
         <!--block level elements and inline elemnets-->
 
@@ -76,7 +106,16 @@
         <!-- class -->
         <!--id attribute has very specific for every class name and single thing -->
 
-       <!-- <div class= "section">
+        <div>
+            <p> Ankit Mehta is a great developer </p>
+            <p> Ankit Mehta is a great developer </p>
+            <p> Ankit Mehta is a great developer </p>
+            <p> Ankit Mehta is a great developer </p>
+            
+        </div>
+        <div class ="navbar"><p>Navbar</p></div>
+        <div class="chat-box"><p>chat-box</p></div>
+        <div class= "section">
         <h1 id= "myPotfolio">My Portfolio and my MERN Stack projects </h1>
 
         <div class="course">
@@ -93,6 +132,8 @@
             <h2> React JS </h2>
             <p> React has a concept of virtual DOM </p>
         </div>
+
+        <span class ="courseMessage">CLick here for more courses </span>
 
         </div>-->
 
@@ -133,7 +174,7 @@
         </form>
 </html>
 
-<!--We can do multiple div as to crete changes <div><h1></h1></div>-->
+<!--We can do multiple div as to create changes <div><h1></h1></div>-->
 
 <!-- HTML forms (forms are where you collect data , if you want to take input from user we use forms )-->
 <!--WEB ASSABILITIES  Label is used for people of diabilities , they can easily view by label , form option-->
@@ -151,9 +192,60 @@ type is radio button , value is send to backend, name can be same for so many as
 <!--<input type="text" name="fname" id="firstName"/>-->
 <!--<input type="text" name="lname" id="lastname"/> here basically name is returened as the fname and lname -->
 <!-- if we have form and click on submit -> it goes one by one as first name , last name , favorite laguage ,favroite car -->
+<!--div , form, sementic elements -->
+<!--Sementic element -> They clearelly define what they do , do not focus on another -> 
+<form> </form>
+<table> </table>
+<section> </section>
+<article> </article>
 
+<!--NON- Sementic tag-> There name do not define what they do like div, span, paragraph 
+<div> </div>
+<span> </span>
+<paragraph> </paragraph>
 
+<!--There are 3 ways of styling 1. inline styling 2.  internal CSS , and  3. external CSS  
+    <h1 style= "border:2px solid red;">How are you</h1>2. 
+    <span style="border:3px solid yellow">I am very good </span>
+    inline CSS and internal CSS (inline CSS is wrting into the same tag , internal CSS is internally written in <style></style> tag)
+    (Internal CSS)
+    <style>
+        .class{
 
+        }
+        .id{
 
+        }
+    </style>
+    (External CSS)
+    style.css
+    <link rel="stylesheet" type="text.css" href="style.css"
 
+    <!--External CSS -> CSS is written outside the file and internally imported by link tag
+    <link rel="stylesheet" type="text/css" href="style.css"
+    <link rel="stylesheet" type="text.css" href="style.css"
+    <link rel="stylesheet" type="text.css" href="style.css"
+The type which is close to the tag is used much-> inline, internal, external
+but actually we should use as external, internal, inline.-->
 
+<!--Ther are many CSS properties which is used to style things 
+    .class{
+        background-color: red;
+        border: 3px solid red;
+        margin: 3px;
+        color: black;
+        text-align: center;
+    } 
+There are basically 2 thing in console-> 1. dom model with html, 2. css box where we keep chnages css -->
+<!--There are 4 things in css box -> content , padding , border, margin !! content-> padding-> border-> margin!! content-> padding -> border-> margin -->
+<!--padding is the space b/w content and border !! , margin is also the distance b/w the border and te padding across all the directions  -->
+<!-- We have 4 content in css group is content -> padding-> border-> margin 
+content-> where text, image is there , padding -> the distance b/w content and border-> border-> the outer surface bw the content . margin-> the space outside the border 
+There are 2 types of tags 1.inline tag-> (span) and 2. block tag->(div)
+Display property is the display: block, none, inline 
+Position -> position is the property that assign the position of the element we have 5 diff position assign static,relative, fixed,absolute sticky,-> static,relative,fixed,absolute,sticky 
+BYdefault the static is bydefault and static is bydefault , other are realtive, absolute, sticky,fixed-> 
+Relative is the position in any direction it will be affected by left, right, up,down,center. So, relative property is affected by left,right etc. but other inner elements's positions do'not change it's position they are not affected 
+position:fixed , top:0px, bottom: 0px;right: 0px;
+fixed, relative, sticky position -> sticky position will always toggle b/w relative and fixed 
+Absolute position ->  is positing of message relative to it's Nearest box -->
